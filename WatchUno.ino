@@ -45,6 +45,7 @@ void Draw()
 	char timeBuffer[50];
 	sprintf(timeBuffer, "%02u:%02u", Rtc.GetDateTime().Hour(), Rtc.GetDateTime().Minute());
 	display.print(timeBuffer);
+	display.display();
 }
 
 void loop()
